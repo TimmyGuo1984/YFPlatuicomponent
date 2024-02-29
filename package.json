@@ -1,0 +1,83 @@
+{
+  "_from": "git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+  "_id": "yplatuicomponent@1.4.9",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/yplatuicomponent",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "yplatuicomponent@git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+    "name": "yplatuicomponent",
+    "escapedName": "yplatuicomponent",
+    "rawSpec": "git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+    "saveSpec": "git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+    "fetchSpec": "http://10.103.110.70/root/yplat-ui-components",
+    "gitCommittish": "1.4.9"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+  "_spec": "yplatuicomponent@git+github.com/TimmyGuo1984/YFPlatuicomponent.git",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-card": "^1.14.7",
+    "@ant-design/pro-form": "^1.32.1",
+    "@ant-design/pro-table": "^2.44.0",
+    "@types/js-base64": "^3.3.1",
+    "@types/qrcode.react": "^1.0.2",
+    "antd": "^4.16.8",
+    "axios": "^0.21.1",
+    "js-base64": "^3.6.1",
+    "mobx": "^6.3.2",
+    "mobx-react-lite": "^3.2.0",
+    "oidc-client": "^1.11.5",
+    "qrcode.react": "^1.0.1",
+    "react": "^16.12.0",
+    "react-dnd": "^11.1.3",
+    "react-dnd-html5-backend": "^11.1.3",
+    "react-draggable": "^4.4.3",
+    "react-router-dom": "^5.2.0",
+    "react-to-print": "^2.12.6"
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "@umijs/test": "^3.0.5",
+    "dumi": "^1.1.23",
+    "father-build": "^1.19.4",
+    "gh-pages": "^3.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "name": "yplatuicomponent",
+  "private": true,
+  "scripts": {
+    "build": "father-build",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "docs:build": "dumi build",
+    "docs:deploy": "gh-pages -d docs-dist",
+    "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "release": "npm run build && npm publish",
+    "start": "dumi dev",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "1.4.9"
+}
